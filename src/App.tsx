@@ -1,7 +1,8 @@
 // import Menu from '../src/components/Menu/Menu';
 import Header from '../src/components/Header/Header';
-import { FontStyles } from "./global";
+import { FontStyles, StylesConteiner } from "./global";
 import { createGlobalStyle } from "styled-components";
+import HomePage from './pages/HomePage';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -17,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     min-height: 100vh;
     width: 100%;
-    background-color: #fdf2e9;
+    background-color: #fff;
     font-family: "Ferry", "Arial", sans-serif;
     line-height: 1.5;
   }
@@ -65,12 +66,13 @@ const GlobalStyle = createGlobalStyle`
 
 const App = () => {
   return (
-    <div>
+    <StylesConteiner>
       <Header />
       <GlobalStyle />
       <FontStyles />
       {/* <Menu /> */}
-    </div>
+      <HomePage /> 
+    </StylesConteiner>
   );
 };
 

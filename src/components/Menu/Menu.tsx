@@ -14,12 +14,10 @@ const Menu = () => {
     <div ref={node}>
       <Hamburger open={open} setOpen={setOpen} />
       <StyledMenu open={open}>
-        <StyledLink to="/" onClick={close}>Home</StyledLink>
-        <StyledLink to="/about" onClick={close}>About</StyledLink>
-        <StyledLink to="/services" onClick={close}>Services</StyledLink>
-        <StyledLink to="/contact" onClick={close}>Contact</StyledLink>
+        <StyledLink to="/" onClick={close}>Главная</StyledLink>
+        <StyledLink to="/tariff" onClick={close}>Тарифы</StyledLink>
+        <StyledLink to="/faq" onClick={close}>FAQ</StyledLink>
       </StyledMenu>
-      
     </div>
   );
 };
